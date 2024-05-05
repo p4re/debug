@@ -7,7 +7,7 @@ UserInputService.InputBegan:Connect(function(Input)
       local src = [[
           game:GetService("ReplicatedFirst"):RemoveDefaultLoadingScreen()
           repeat wait() until game:GetService('Players').LocalPlayer
-          loadstring(game:HttpGet('%s',true))();
+          loadstring(game:HttpGet('https://raw.githubusercontent.com/p4re/debug/main/rejoin.lua',true))();
       ]]
       srcf = string.format('nil')
       queue_on_teleport(srcf)
